@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Australia Post Address Validator",
-  description: "Validate Australian addresses using the Australia Post API",
+  description: "Validate Australian addresses using the Australia Post API"
 };
 
 export default function RootLayout({

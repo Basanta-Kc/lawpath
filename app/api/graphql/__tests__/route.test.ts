@@ -1,7 +1,7 @@
 import { ApolloServer } from '@apollo/server';
 import { startServerAndCreateNextHandler } from '@as-integrations/next';
 import { typeDefs, addressSchema } from '@/lib/schema';
-import { NextRequest } from 'next/server';
+import { NextRequest } from "next/server";
 import axios from 'axios';
 
 jest.mock('axios');
