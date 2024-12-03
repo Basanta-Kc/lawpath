@@ -13,6 +13,7 @@ export default function AddressValidatorClient() {
   const { data, loading, error } = useQuery<{ validateAddress: ValidationResultType }, AddressInput>(VALIDATE_ADDRESS, {
     variables: addressInput || { postcode: '', suburb: '', state: '' },
     skip: !addressInput,
+    fetchPolicy: "no-cache"
   });
 
   const onSubmit = (data: AddressInput) => {
